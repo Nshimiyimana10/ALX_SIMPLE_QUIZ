@@ -1,0 +1,1 @@
+const choice1 = document.getElementById('choice1')
