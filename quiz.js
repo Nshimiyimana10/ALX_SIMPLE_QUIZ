@@ -9,7 +9,7 @@ const button = document.getElementById('submit-answer').addEventListener("click"
 function checkAnswer(){
     let correctAnswer = "4";
     let userAnswer = choice1.value;
-    if(choice1.checked && userAnswer ===correctAnswer){
+    if(userAnswer ===correctAnswer){
         feedback.textContent = "Correct! Well done."
     }
 
