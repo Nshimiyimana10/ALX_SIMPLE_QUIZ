@@ -13,12 +13,12 @@ function checkAnswer(){
         feedback.textContent = "Correct! Well done."
     }
 
-    else if(choice2.checked && userAnswer ===correctAnswer){
+    else if(userAnswer ===correctAnswer){
         feedback.textContent = "Correct! Well done."
 
     }
 
-    else if(choice3.checked && userAnswer ===correctAnswer){
+    else if(userAnswer ===correctAnswer){
         feedback.textContent = "Correct! Well done."
 
     }
