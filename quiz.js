@@ -9,16 +9,16 @@ const button = document.getElementById('submit-answer').addEventListener("click"
 function checkAnswer(){
     let correctAnswer = "4";
     let userAnswer = choice1.value;
-    if(userAnswer ===correctAnswer){
+    if(choice1.checked && userAnswer ===correctAnswer){
         feedback.textContent = "Correct! Well done."
     }
 
-    else if(userAnswer ===correctAnswer){
+    else if(choice2.checked && userAnswer ===correctAnswer){
         feedback.textContent = "Correct! Well done."
 
     }
 
-    else if(userAnswer ===correctAnswer){
+    else if(choice3.checked && userAnswer ===correctAnswer){
         feedback.textContent = "Correct! Well done."
 
     }
