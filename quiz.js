@@ -2,6 +2,7 @@ const choice1 = document.querySelector('#choice1');
 const choice2 = document.querySelector('#choice2');
 const choice3 = document.querySelector('#choice3');
 let feedback = document.getElementById("feedback");
+const choice = document.getElementsByName("quiz");
 
 const button = document.getElementById('submit-answer').addEventListener("click", checkAnswer)
 
