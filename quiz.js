@@ -1,22 +1,13 @@
-const choice1 = document.querySelector('#choice1');
-const choice2 = document.querySelector('#choice2');
-const choice3 = document.querySelector('#choice3');
-const feedback = document.getElementById("feedback");
-const choice = document.querySelector("quiz");
-const userAnswer = document.querySelector('input').value.checked;
-console.log(userAnswer);
+function checkAnswer() {
+    const correctAnswer = "4";
+    const userAnswer = document.querySelector('input[name="quiz"]:checked')?.value;
 
-const button = document.getElementById('submit-answer').addEventListener("click", checkAnswer)
+    const feedback = document.getElementById('feedback');
 
-function checkAnswer(){
-    let correctAnswer = "4";
-    if(userAnswer===correctAnswer){
-        feedback.textContent = "Correct! Well done."
+    if (userAnswer === correctAnswer) {
+        feedback.textContent = "Correct! Well done.";
+    } else {
+        feedback.textContent = "That's incorrect. Try again!";
     }
-
-
-    else{
-        feedback.textContent = "That's incorrect. Try again!"
-    }
-
 }
+document.getElementById('submit-answer').addEventListener('click', checkAnswer);
