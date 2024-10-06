@@ -3,7 +3,7 @@ const choice2 = document.querySelector('#choice2');
 const choice3 = document.querySelector('#choice3');
 const feedback = document.getElementById("feedback");
 const choice = document.querySelector("quiz");
-const userAnswer = document.querySelector('input').checked;
+const userAnswer = document.querySelector('input').value.checked;
 console.log(userAnswer);
 
 const button = document.getElementById('submit-answer').addEventListener("click", checkAnswer)
