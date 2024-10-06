@@ -10,15 +10,15 @@ const button = document.getElementById('submit-answer').addEventListener("click"
 
 function checkAnswer(){
     let correctAnswer = "4";
-    if(userAnswer[0].value ===correctAnswer){
+    if(userAnswer[0].value.checked ===correctAnswer){
         feedback.textContent = "Correct! Well done."
     }
 
-    else if(userAnswer[1].value === correctAnswer){
+    else if(userAnswer[1].value.checked === correctAnswer){
         feedback.textContent === "correct! Well done"
     }
 
-    else if(userAnswer[2].value === correctAnswer){
+    else if(userAnswer[2].value.checked === correctAnswer){
         feedback.textContent === "correct! Well done"
     }
 
